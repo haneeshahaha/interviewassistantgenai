@@ -1,0 +1,20 @@
+{
+  "name": "ai-mock-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "ai-mock",
+    "vite-project"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter vite-project run dev",
+    "dev:next": "pnpm --filter ai-mock run dev",
+    "build": "pnpm --filter vite-project run build",
+    "build:next": "pnpm --filter ai-mock run build",
+    "lint": "pnpm --filter vite-project run lint",
+    "lint:next": "pnpm --filter ai-mock run lint"
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0"
+  }
+}
