@@ -1,7 +1,11 @@
-import { cn } from '@/lib/utils'
-import{Loa}from
+import { cn } from '../lib/utils'
+import { Loader } from 'lucide-react'
 
-export const loaderpage = ({className ?: string}) => {
+interface LoaderPageProps {
+  className?: string
+}
+
+export const LoaderPage = ({ className }: LoaderPageProps) => {
   return (
     <div className={cn(
         "w-screen h-screen flex items-center justify-center bg-transparent z-50",
